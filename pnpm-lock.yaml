@@ -14,7 +14,7 @@ specifiers:
   eslint: ^8
   eslint-config-next: 14.2.15
   next: 15.0.0-canary.56
-  next-auth: 5.0.0-beta.19
+  next-auth: 5.0.0-beta.25
   postcss: 8.4.38
   react: 19.0.0-rc-f38c22b244-20240704
   react-dom: 19.0.0-rc-f38c22b244-20240704
@@ -31,7 +31,7 @@ dependencies:
   bcrypt: 5.1.1
   clsx: 2.1.1
   next: 15.0.0-canary.56_kqnhcwq7cfefwjfhumc7ykjqjy
-  next-auth: 5.0.0-beta.19_mtcevzrfddje26vnskqzceow2e
+  next-auth: 5.0.0-beta.25_mtcevzrfddje26vnskqzceow2e
   postcss: 8.4.38
   react: 19.0.0-rc-f38c22b244-20240704
   react-dom: 19.0.0-rc-f38c22b244-20240704_xewwzbjs5733owxsgjvdznu3oe
@@ -55,8 +55,8 @@ packages:
     engines: {node: '>=10'}
     dev: false
 
-  /@auth/core/0.32.0:
-    resolution: {integrity: sha512-3+ssTScBd+1fd0/fscAyQN1tSygXzuhysuVVzB942ggU4mdfiTbv36P0ccVnExKWYJKvu3E2r3/zxXCCAmTOrg==}
+  /@auth/core/0.37.2:
+    resolution: {integrity: sha512-kUvzyvkcd6h1vpeMAojK2y7+PAV5H+0Cc9+ZlKYDFhDY31AlvsB+GW5vNO4qE3Y07KeQgvNO9U0QUx/fN62kBw==}
     peerDependencies:
       '@simplewebauthn/browser': ^9.0.1
       '@simplewebauthn/server': ^9.0.2
@@ -71,9 +71,9 @@ packages:
     dependencies:
       '@panva/hkdf': 1.2.1
       '@types/cookie': 0.6.0
-      cookie: 0.6.0
+      cookie: 0.7.1
       jose: 5.9.4
-      oauth4webapi: 2.17.0
+      oauth4webapi: 3.1.1
       preact: 10.11.3
       preact-render-to-string: 5.2.3_preact@10.11.3
     dev: false
@@ -1116,8 +1116,8 @@ packages:
     resolution: {integrity: sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==}
     dev: false
 
-  /cookie/0.6.0:
-    resolution: {integrity: sha512-U71cyTamuh1CRNCfpGY6to28lxvNwPG4Guz/EVjgf3Jmzv0vlDp1atT9eS5dDjMYHucpHbWns6Lwf3BKz6svdw==}
+  /cookie/0.7.1:
+    resolution: {integrity: sha512-6DnInpx7SJ2AK3+CTUE/ZM0vWTUboZCegxhC2xiIydHR9jNuTAASBrfEpHhiGOZw/nX51bHt6YQl8jsGo4y/0w==}
     engines: {node: '>= 0.6'}
     dev: false
 
@@ -2463,12 +2463,12 @@ packages:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
 
-  /next-auth/5.0.0-beta.19_mtcevzrfddje26vnskqzceow2e:
-    resolution: {integrity: sha512-YHu1igcAxZPh8ZB7GIM93dqgY6gcAzq66FOhQFheAdOx1raxNcApt05nNyNCSB6NegSiyJ4XOPsaNow4pfDmsg==}
+  /next-auth/5.0.0-beta.25_mtcevzrfddje26vnskqzceow2e:
+    resolution: {integrity: sha512-2dJJw1sHQl2qxCrRk+KTQbeH+izFbGFPuJj5eGgBZFYyiYYtvlrBeUw1E/OJJxTRjuxbSYGnCTkUIRsIIW0bog==}
     peerDependencies:
       '@simplewebauthn/browser': ^9.0.1
       '@simplewebauthn/server': ^9.0.2
-      next: ^14 || ^15.0.0-0
+      next: ^14.0.0-0 || ^15.0.0-0
       nodemailer: ^6.6.5
       react: ^18.2.0 || ^19.0.0-0
     peerDependenciesMeta:
@@ -2479,7 +2479,7 @@ packages:
       nodemailer:
         optional: true
     dependencies:
-      '@auth/core': 0.32.0
+      '@auth/core': 0.37.2
       next: 15.0.0-canary.56_kqnhcwq7cfefwjfhumc7ykjqjy
       react: 19.0.0-rc-f38c22b244-20240704
     dev: false
@@ -2583,8 +2583,8 @@ packages:
       set-blocking: 2.0.0
     dev: false
 
-  /oauth4webapi/2.17.0:
-    resolution: {integrity: sha512-lbC0Z7uzAFNFyzEYRIC+pkSVvDHJTbEW+dYlSBAlCYDe6RxUkJ26bClhk8ocBZip1wfI9uKTe0fm4Ib4RHn6uQ==}
+  /oauth4webapi/3.1.1:
+    resolution: {integrity: sha512-0h4FZjsntbKQ5IHGM9mFT7uOwQCRdcTG7YhC0xXlWIcCch24wUa6Vggaipa3Sw6Ab7nEnmO4rctROmyuHBfP7Q==}
     dev: false
 
   /object-assign/4.1.1:
