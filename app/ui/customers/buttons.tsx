@@ -1,6 +1,5 @@
-import { deleteInvoice } from '@/app/lib/actions';
-import { PencilIcon, PlusIcon, TrashIcon } from '@heroicons/react/24/outline';
-import Link from 'next/link';
+import Link from 'next/link'
+import { PencilIcon, PlusIcon } from '@heroicons/react/24/outline'
 
 export function CreateCustomer() {
   return (
@@ -11,7 +10,7 @@ export function CreateCustomer() {
       <span className="hidden md:block">Create Customer</span>{' '}
       <PlusIcon className="h-5 md:ml-4" />
     </Link>
-  );
+  )
 }
 
 export function UpdateCustomer({ id }: { id: string }) {
@@ -22,18 +21,5 @@ export function UpdateCustomer({ id }: { id: string }) {
     >
       <PencilIcon className="w-5" />
     </Link>
-  );
-}
-
-export function DeleteCustomer({ id }: { id: string }) {
-  // const deleteInvoiceWithId = deleteInvoice.bind(null, id)
-
-  return (
-    <form>
-      <button className="rounded-md border p-2 hover:bg-gray-100">
-        <span className="sr-only">Delete</span>
-        <TrashIcon className="w-5" />
-      </button>
-    </form>
-  );
+  )
 }
