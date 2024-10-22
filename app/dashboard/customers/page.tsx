@@ -6,7 +6,12 @@ import { lusitana } from "@/app/ui/fonts";
 import Pagination from "@/app/ui/invoices/pagination";
 import Search from "@/app/ui/search";
 import { InvoicesTableSkeleton } from "@/app/ui/skeletons";
+import { Metadata } from "next";
 import { Suspense } from "react";
+
+export const metadata: Metadata = {
+  title: 'Customers',
+};
 
 export default async function Page({
   searchParams,
