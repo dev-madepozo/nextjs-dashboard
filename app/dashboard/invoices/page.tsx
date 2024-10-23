@@ -1,17 +1,17 @@
-import { CreateInvoice } from "@/app/ui/invoices/buttons";
-import InvoicesTable from "@/app/ui/invoices/table";
-import Search from "@/app/ui/search";
+import { Metadata } from "next"
+import { Suspense } from "react"
 
-import { lusitana } from "@/app/ui/fonts";
-import { Suspense } from "react";
-import { InvoicesTableSkeleton } from "@/app/ui/skeletons";
-import { fetchInvoicesPages } from "@/app/lib/data";
-import Pagination from "@/app/ui/invoices/pagination";
-import { Metadata } from "next";
+import { CreateInvoice } from "@/app/ui/invoices/buttons"
+import { fetchInvoicesPages } from "@/app/lib/data"
+import { InvoicesTableSkeleton } from "@/app/ui/skeletons"
+import { lusitana } from "@/app/ui/fonts"
+import InvoicesTable from "@/app/ui/invoices/table"
+import Pagination from "@/app/ui/invoices/pagination"
+import Search from "@/app/ui/search"
 
 export const metadata: Metadata = {
   title: 'Invoices',
-};
+}
 
 export default async function Page({
   searchParams,
